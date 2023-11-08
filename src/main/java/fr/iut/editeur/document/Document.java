@@ -19,7 +19,11 @@ public class Document {
     public void ajouter(String texte) {
         this.texte += texte;
     }
-
+    public void remplacer(int start, int end, String remplacement) {
+        String leftPart = texte.substring(0, start);
+        String rightPart = texte.substring(end);
+        texte = leftPart + remplacement + rightPart;
+    }
     @Override
     public String toString() {
         return this.texte;
