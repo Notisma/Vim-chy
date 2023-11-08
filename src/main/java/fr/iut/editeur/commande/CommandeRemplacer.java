@@ -14,7 +14,7 @@ public class CommandeRemplacer extends CommandeDocument {
             return;
         }
 
-        String texte = parameters[3];
+        String texte = parameters[1];
         try {
             this.document.remplacer(Integer.parseInt(parameters[1]),Integer.parseInt(parameters[2]), texte);
         }catch (NumberFormatException e) {
