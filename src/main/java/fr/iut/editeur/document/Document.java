@@ -35,6 +35,10 @@ public class Document {
         remplacer(start, end, " ");
     }
 
+    public void clear(){
+        remplacer(0, (this.texte.length()-1), "a");
+    }
+
     @Override
     public String toString() {
         return this.texte;
