@@ -9,8 +9,8 @@ public class CommandeRemplacer extends CommandeDocument {
 
     @Override
     public void executer() {
-        if(parameters.length < 3) {
-            System.err.println("Format attendu : ajouter;texte");
+        if(parameters.length < 4) {
+            System.err.println("Format attendu : remplacer;1;2;texte");
             return;
         }
 
