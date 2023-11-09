@@ -36,7 +36,7 @@ public class Document {
     }
 
     public void clear(){
-        remplacer(0, (this.texte.length()-1), "a");
+        remplacer(0, this.texte.length(), "a");
     }
 
     @Override
