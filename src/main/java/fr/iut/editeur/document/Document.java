@@ -54,7 +54,7 @@ public class Document {
 
     public void clear(){
         setEtatPrecedent();
-        remplacer(0, this.texte.length(), "a");
+        remplacer(0, this.texte.length(), " ");
     }
 
     public void undo(){
