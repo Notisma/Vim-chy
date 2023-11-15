@@ -45,7 +45,6 @@ public class Document {
         String texteMaj = texte.substring(start, end);
         texteMaj = texteMaj.toUpperCase();
         remplacer(start, end, texteMaj);
-
     }
 
     public void effacer(int start, int end){
@@ -79,6 +78,16 @@ public class Document {
             System.err.println("erreur redo null");
         }
     }
+
+    public void inserer(int index, String toInsert) {
+        if (index < 0)
+            index = 0;
+        else if (index >= texte.length())
+            index = texte.length()-1;
+
+        remplacer(index, index, toInsert);
+    }
+
 
     @Override
     public String toString() {
