@@ -79,6 +79,16 @@ public class Document {
         }
     }
 
+    public void inserer(int index, String toInsert) {
+        if (index < 0)
+            index = 0;
+        else if (index >= texte.length())
+            index = texte.length()-1;
+
+        remplacer(index, index, toInsert);
+    }
+
+
     @Override
     public String toString() {
         return this.texte;
